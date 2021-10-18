@@ -1,6 +1,7 @@
 This directory is for LSTM based SegSRGAN. The input is a minibatch consisting of sequence of patches where each patch is from 3D image 
 
-SegSRGAN_training_modified.py is used for training only the generator model and SegSRGAN_training_modified_full.py is used for training the full GAN model. All the inputs should be of .nii format. <br />
+SegSRGAN_training_modified.py is used for training the full GAN model. The code can be modified to make it run only for the generator by removing the discriminator training.<br />
+All the inputs should be of .nii format.<br />
 temporal_cropped_dgx.csv contains the path to the files which is used for training. Only the path to the parent directory should be given in the temporal_cropped_dgx.csv file. The code automatically goes inside the sub-directory and reads the files. For example, the path to the parent directory should be given like 
 ```
 /proj/Mice_Results/1
@@ -35,4 +36,4 @@ python SegSRGAN_training_modified_full.py -n 1.75 1.75 5
 <br />
 
 The dice and mse results for each training epoch are stored in the csv files given in the command. <br />
-For testing the performace of the model, check_results.py file should be run. The output for this file is HR image and mask image.
+For testing the performace of the model, check_results.py file should be run. The input path should only be the parent directory containing the images. The output will be set of HR images and mask images. (For 10 timesteps, there will be 10 input images and 10 output images).
