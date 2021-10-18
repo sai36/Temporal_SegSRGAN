@@ -164,7 +164,8 @@ def create_patch_from_df_hr(df,
                                                                                                            label_name,
                                                                                                            mask_name, list_res[i], interp)
 
-            #CODE BY SAI FOR SAVING TRAINING IMAGES
+            #CODE BY SAI FOR SAVING THE TRAINING IMAGES. 
+            '''
             ref_split = reference_name.split('/')
             low_resolution_image1 = low_resolution_image.transpose(2,1,0)
             low_res1 = sitk.GetImageFromArray(low_resolution_image1)
@@ -180,7 +181,7 @@ def create_patch_from_df_hr(df,
             sitk.WriteImage(lab_res1, lab_image_name)
             print ("Training images saved for ", ref_split[3] + "-" + ref_split[4])
             # mask_image will be None if no mask is fitted.
-            print (low_res1.GetSize())
+            print (low_res1.GetSize())'''
             print(fit_mask)
             print(image_cropping_method)
             border_to_keep = border_im_keep(reference_image, thresholdvalue)
