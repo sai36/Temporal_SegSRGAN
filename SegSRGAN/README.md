@@ -25,3 +25,7 @@ python SegSRGAN_training_modified_full.py -n 1.75 1.75 5
 >interpolation method is different. With Scipy, the downsampling is performed by a Scipy method whereas we perform a classical,
 >manual downsampling for sitk. 
 
+<br />
+
+The dice and mse results for each training epoch are stored in the csv files given in the command. <br />
+For testing the performace of the model, check_results.py file should be run. The output for this file is HR image and mask image.
