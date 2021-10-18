@@ -1,5 +1,5 @@
 This directory is for SegSRGAN without LSTM. The input is a minibatch consisting of multiple patches generated from 3D image. The output is also set of patches. <br />
-
+SegSRGAN_training_modified.py is used for training only the generator model and SegSRGAN_training_modified_full.py is used for training the full GAN model. All the inputs should be of .nii format. 
 An example of how to run the code for training is given by:  <br />
 
 ```
