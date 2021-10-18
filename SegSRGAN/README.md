@@ -1,6 +1,6 @@
 This directory is for SegSRGAN without LSTM. The input is a minibatch consisting of multiple patches generated from 3D image. The output is also set of patches. <br />
 
-The code for running the training is given by:  <br />
+An example of how to run the code for training is given by:  <br />
 
 ```
 
