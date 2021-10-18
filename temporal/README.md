@@ -2,7 +2,7 @@ This directory is for LSTM based SegSRGAN. The input is a minibatch consisting o
 
 SegSRGAN_training_modified.py is used for training the full GAN model. The code can be modified to make it run only for the generator by removing the discriminator training.<br />
 All the inputs should be of .nii format.<br />
-"temporal_cropped_dgx.csv" contains the path to the files which is used for training. Only the path to the parent directory should be given in the "temporal_cropped_dgx.csv" file. The code automatically goes inside the sub-directory and reads the files. For example, the path to the parent directory should be given like 
+"data_temporal.csv" contains the path to the files which is used for training. Only the path to the parent directory should be given in the "data_temporal.csv" file. The code automatically goes inside the sub-directory and reads the files. For example, the path to the parent directory should be given like 
 ```
 /proj/Mice_Results/1
 ```
