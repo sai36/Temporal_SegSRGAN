@@ -12,7 +12,8 @@ An example of how to run the code for training is given by:  <br />
 
 python SegSRGAN_training_modified_full.py -n 1.75 1.75 5 
 -csv /home/a2010-venmo/SRGAN/home_backup/mask_SegSRGAN/temporal_cropped_dgx_1.csv 
--sf /proj/SegSRGAN/snapshot_baseline_temporal/ -dice /home/a2010-venmo/SRGAN/home_backup/mask_SegSRGAN/dice_files/dice_baseline_temporal.csv -mse /home/a2010-venmo/SRGAN/home_backup/mask_SegSRGAN/mse_files/mse_baseline_temporal.csv 
+-sf /proj/SegSRGAN/snapshot_baseline_temporal/ -dice /home/a2010-venmo/SRGAN/home_backup/mask_SegSRGAN/dice_files/dice_baseline_temporal.csv 
+-mse /home/a2010-venmo/SRGAN/home_backup/mask_SegSRGAN/mse_files/mse_baseline_temporal.csv 
 -folder_training_data /proj/SegSRGAN/temp_training_temporal -e 200 -b 64 -rl dice 
 ```
 
